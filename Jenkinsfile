@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/Vinayak-99010/taskmanager.git'
+                git branch: 'main', url: 'https://github.com/Vinayak-99010/taskmanager.git'
             }
         }
         stage('Build') {
